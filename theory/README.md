@@ -10,6 +10,8 @@ both `antelope` and `antelopes`.)
     antelope rocks out
     antelopes rock out
 
+    Answer: /antelope?s/
+
 * Regex that matches either of:
 
     goat
@@ -18,6 +20,7 @@ both `antelope` and `antelopes`.)
   but not:
 
     boat
+  Answer: /^b?g+oat|m+oat/
 
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
@@ -27,7 +30,7 @@ both `antelope` and `antelopes`.)
   1999-1-20
   1999-01-20
   812-2-10
-
+ Answer: /\d\d\d\d-\d\d?-\d\d/
 ## State Machines
 
 > A useful tool for drawing state machines is [Evan's FSM
@@ -74,3 +77,6 @@ both `antelope` and `antelopes`.)
 >
 > One of your instructors was once hired to implement VT-100 emulation
 > in an app, and they used a state machine to do it.
+
+Answer: \e\d\d;\d\d
+answer: \e[1]*
